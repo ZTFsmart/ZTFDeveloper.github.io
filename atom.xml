@@ -5,12 +5,12 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://45.77.194.197/"/>
+  <link href="https://ztfsmart.github.io/"/>
   <updated>2017-10-27T06:48:09.978Z</updated>
-  <id>http://45.77.194.197/</id>
+  <id>https://ztfsmart.github.io/</id>
   
   <author>
-    <name>朱天赋</name>
+    <name>ZTF</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://45.77.194.197/2017/10/27/hello-world/"/>
-    <id>http://45.77.194.197/2017/10/27/hello-world/</id>
+    <link href="https://ztfsmart.github.io/2017/10/27/hello-world/"/>
+    <id>https://ztfsmart.github.io/2017/10/27/hello-world/</id>
     <published>2017-10-27T06:48:09.978Z</published>
     <updated>2017-10-27T06:48:09.978Z</updated>
     
