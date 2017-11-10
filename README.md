@@ -1,4 +1,5 @@
 想搞个个人博客玩玩吗,看我的教程就够了,[我的博客](https://ztfsmart.github.io/)
+
 #ubuntu下搭建Hexo+GitHub博客
 
 #一、安装 Node.js和npm
@@ -55,7 +56,7 @@
 ![成功的提示](http://img.blog.csdn.net/20171027163740417?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 浏览器输入 http://0.0.0.0:4000 可以访问到首页
-![这里写图片描述](http://img.blog.csdn.net/20171027163800961?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![首页图片](http://img.blog.csdn.net/20171027163800961?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 修改Hexo配置文件hexo/_config.yml
 >提示：key对应没有值的时候，冒号后面一定要有空格！否则会报错
@@ -139,16 +140,16 @@ permalink_defaults:
 >less ~/.ssh/id_rsa.pub
 
 
-![这里写图片描述](http://img.blog.csdn.net/20171027170451454?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![ssh完成图片](http://img.blog.csdn.net/20171027170451454?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ##3.创建博客工程
 >创建一个新项目，项目名称为 用户名.github.io ，比如我的Github用户名是mritd，则创建的项目名为 mritd.github.io
 >用户名是你的github用户名哦！千万别弄错了，不然访问不到的！
 
-![这里写图片描述](http://img.blog.csdn.net/20171027170816691?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![设置用户名](http://img.blog.csdn.net/20171027170816691?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ##4.将ssh秘钥添加到github中
-![这里写图片描述](http://img.blog.csdn.net/20171027171423476?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![把ssh添加到github中](http://img.blog.csdn.net/20171027171423476?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1dGlhbmZ1NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
 #五、配置Hexo，编译与部署
