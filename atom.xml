@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ztfsmart.github.io/"/>
-  <updated>2017-11-13T02:31:10.319Z</updated>
+  <updated>2017-11-28T10:57:00.513Z</updated>
   <id>https://ztfsmart.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>shadowsocks服务端配置</title>
+    <link href="https://ztfsmart.github.io/2017/11/28/shadowsocks%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE/"/>
+    <id>https://ztfsmart.github.io/2017/11/28/shadowsocks服务端配置/</id>
+    <published>2017-11-28T10:53:41.000Z</published>
+    <updated>2017-11-28T10:57:00.513Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</div><div class="line">chmod +x shadowsocks.sh</div><div class="line">./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</div></pre></td></tr></table></figure><a id="more"></a><p>##卸载命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./shadowsocks.sh uninstall</div></pre></td></tr></table></figure></p><p>配置文件路径：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/shadowsocks.json</div></pre></td></tr></table></figure></p><p>##默认配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">    &quot;server_port&quot;:8989,</div><div class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;你的密码&quot;,</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-gcm&quot;,</div><div class="line">    &quot;fast_open&quot;:false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>server: 服务器ip地址<br>server_port: 绑定的端口，注意不要设置已经使用了的端口<br>possword: 密码<br>timeout: 超时时间<br>method: 加密方法<br>fast_open: 如果你的服务器 Linux 内核在3.7+，可以开启 fast_open 以降低延迟</p><p>##配置多个账号密码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">&quot;port_password&quot;:&#123;</div><div class="line">     &quot;8381&quot;:&quot;password1&quot;,</div><div class="line">     &quot;8382&quot;:&quot;password2&quot;,</div><div class="line">     &quot;8383&quot;:&quot;password3&quot;,</div><div class="line">     &quot;8384&quot;:&quot;password4&quot;</div><div class="line">     &#125;,</div><div class="line">&quot;timeout&quot;:300,</div><div class="line">&quot;method&quot;:&quot;aes-256-gcm&quot;,</div><div class="line">&quot;fast_open&quot;:false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>#启动shadowsocks<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">启动：/etc/init.d/shadowsocks start</div><div class="line">停止：/etc/init.d/shadowsocks stop</div><div class="line">重启：/etc/init.d/shadowsocks restart</div><div class="line">状态：/etc/init.d/shadowsocks status</div></pre></td></tr></table></figure></p><p><a href="http://blog.csdn.net/zhutianfu521" target="_blank" rel="external">更多内容</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;chmod +x shadowsocks.sh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;./shadowsocks.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks.log&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://ztfsmart.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>看&lt;56up&gt;感想</title>
